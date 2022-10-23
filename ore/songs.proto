@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option go_package = "github.com/iron-ore-26k/protobuf/ore";
+
+package ore;
+
+enum Song {
+    SONG_UNKNOWN = 0;
+    SONG_WRECK_OF_EDMUND_FITZGERALD = 1;
+    SONG_FORTUNATE_SON = 2;
+}

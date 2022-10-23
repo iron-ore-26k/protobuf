@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option go_package = "github.com/iron-ore-26k/protobuf/ore";
+
+package ore;
+
+import "protobuf/ore/songs.proto";
+
+service OreService {
+  rpc PlaySong (PlaySongRequest) returns (PlaySongResponse) {}
+  rpc Pause (PauseRequest) returns (PauseResponse) {}
+}
+
+message PlaySongRequest {
+  Song song_to_play = 1;
+}
+
+message PlaySongResponse {
+  // intentionally empty
+}
+
+message PauseRequest {
+  // intentionally empty
+}
+
+message PauseResponse {
+  // intentionally empty
+}
